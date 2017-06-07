@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://cs231n.stanford.edu/2016/syllabus -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stanford University CS231n: Convolutional Neural Networks for Visual Recognition</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap-theme.min.css">
+
+  <!-- Google fonts -->
+  <link href="./css" rel="stylesheet" type="text/css">
+
+  <!-- Google Analytics -->
+  <script async="" src="http://www.google-analytics.com/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46895817-2', 'auto');
+  ga('send', 'pageview');
+  </script><style type="text/css">
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style>
+
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+
+<div id="header">
+  <a href="">
+    <h1>HCIL Winter Seminar 2017</h1>
+  </a>
+
+  <div style="clear:both;"></div>
+</div>
+
+
+<div class="sechighlight">
+<div class="container sec">
+
+  <h2>Schedule and Syllabus</h2>
+  본 페이지는 2017년 여름 방학 동안 CNN 공부를 위한 HCIL 내부 세미나 일정입니다. <br/>
+  Stanford University의 <a href="http://cs231n.stanford.edu/2016/syllabus">CS231n: Convolutional Neural Networks for Visual Recognition (Winter 2016)</a>에 기반하였습니다. <br/>
+  <br/>
+  <a href="https://www.youtube.com/watch?v=yp9rwI_LZX8&list=PL16j5WbGpaM0_Tj8CRmurZ8Kk1gEBc7fg">[동영상 강의 URL]</a>
+  <br/>
+  <br/>
+  <b>세미나 기간:</b> 6월 19일 ~ 8월 31일 <br/>
+  <b>세미나 시간:</b> 매주 목요일 오후 1시 <br/>
+  <b>과제 제출 시간:</b> Due date의 오후 6시 (시간 엄수)<br/>
+
+</div>
+</div>
+
+<div class="container sec">
+<table class="table">
+  <tbody><tr class="active">
+    <th>Event Type</th><th>Due Date</th><th>Description</th><th>Course Materials</th>
+  </tr>
+  <tr>
+    <td>Lecture 1</td>
+    <td>June 28</td>
+    <td>Intro to Computer Vision, historical context.</td>
+    <td><a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture1.pdf">[slides]</a>
+        <!-- <a href="https://youtu.be/NfnWJUyUJYU"><b>[video]</b></a> -->
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 2</td>
+    <td>June 28</td>
+    <td>Image classification and the data-driven approach <br> k-nearest neighbor <br> Linear classification I</td>
+    <td><a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture2.pdf">[slides]</a> [video]
+        <!-- <a href="https://youtu.be/8inugqHkfvE"><b>[video]</b></a> -->
+    <br>
+    <a href="http://cs231n.github.io/python-numpy-tutorial">[python/numpy tutorial]</a><br>
+    <a href="http://cs231n.github.io/classification">[image classification notes]</a><br>
+    <a href="http://cs231n.github.io/linear-classify">[linear classification notes]</a><br>
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A1-part1 Due</td>
+    <td>June 28</td>
+    <td>Assignment #1 (Q1, Q2) Due date</td>
+    <td><a href="http://cs231n.github.io/assignments2016/assignment1/">[Assignment #1]</a></td>
+  </tr>
+  <tr>
+    <td>Lecture 3</td>
+    <td>July 5</td>
+    <td>
+     Linear classification II<br>
+     Higher-level representations, image features<br>
+     Optimization, stochastic gradient descent</td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture3.pdf">[slides]</a> [video]
+      <!-- <a href="https://www.youtube.com/watch?v=qlLChbHhbg4"><b>[video]</b></a> -->
+      <br>
+      <a href="http://cs231n.github.io/linear-classify">[linear classification notes]</a><br>
+      <a href="http://cs231n.github.io/optimization-1">[optimization notes]</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 4</td>
+    <td>July 5</td>
+    <td>Backpropagation<br>
+     Introduction to neural networks</td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture4.pdf">[slides]</a> [video]
+      <!-- <a href="https://youtu.be/i94OvYb6noo"><b>[video]</b></a> -->
+      <br>
+      <a href="http://cs231n.github.io/optimization-2">[backprop notes]</a><br>
+      <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[Efficient BackProp]</a> (optional)<br>
+      related: <a href="http://colah.github.io/posts/2015-08-Backprop/">[1]</a>, <a href="http://neuralnetworksanddeeplearning.com/chap2.html">[2]</a>, <a href="https://www.youtube.com/watch?v=q0pm3BrIUFo">[3]</a> (optional)
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A1-part2 Due</td>
+    <td>July 5</td>
+    <td>Assignment #1 (Q3, Q4, Q5) Due date</td>
+    <td><a href="http://cs231n.github.io/assignments2016/assignment1/">[Assignment #1]</a></td>
+  </tr>
+  <tr>
+    <td>Lecture 5</td>
+    <td>July 12</td>
+    <td>Training Neural Networks Part 1<br>
+    activation functions, weight initialization, gradient flow, batch normalization<br>
+    babysitting the learning process, hyperparameter optimization
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture5.pdf">[slides]</a> [video]
+      <!-- <a href="https://youtu.be/gYpoJMlgyXA"><b>[video]</b></a> -->
+      <br>
+      <a href="http://cs231n.github.io/neural-networks-1/">Neural Nets notes 1</a><br>
+      <a href="http://cs231n.github.io/neural-networks-2/">Neural Nets notes 2</a><br>
+      <a href="http://cs231n.github.io/neural-networks-3/">Neural Nets notes 3</a><br>
+      tips/tricks: 
+      <a href="http://research.microsoft.com/pubs/192769/tricks-2012.pdf">[1]</a>, 
+      <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[2]</a>, 
+      <a href="http://arxiv.org/pdf/1206.5533v2.pdf">[3]</a> (optional)
+      <br>
+      <a href="http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html">Deep Learning [Nature]</a> (optional)
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A2-part1 Due</td>
+    <td>July 12</td>
+    <td>Assignment #2 (Q1) Due date</td>
+    <td><a href="http://cs231n.github.io/assignments2016/assignment2/">[Assignment #2]</a></td>
+  </tr>
+  <tr>
+    <td>Lecture 6</td>
+    <td>July 19</td>
+    <td>
+      Training Neural Networks Part 2: parameter updates, ensembles, dropout<br>
+      Convolutional Neural Networks: intro
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture6.pdf">[slides]</a> [video]
+      <!-- <a href="https://youtu.be/hd_KFJ5ktUc"><b>[video]</b></a> -->
+      <br>
+      <a href="http://cs231n.github.io/neural-networks-3/">Neural Nets notes 3</a><br>
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 7</td>
+    <td>July 19</td>
+    <td>
+      Convolutional Neural Networks: architectures, convolution / pooling layers<br>
+      Case study of ImageNet challenge winning ConvNets
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture7.pdf">[slides]</a> [video]
+      <!-- <a href="https://youtu.be/LxfUGhug-iQ"><b>[video]</b></a> -->
+      <br>
+      <a href="http://cs231n.github.io/convolutional-networks/">ConvNet notes</a><br>
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A2-part2 Due</td>
+    <td>July 19</td>
+    <td>Assignment #2 (Q2, Q3) Due date</td>
+    <td><a href="http://cs231n.github.io/assignments2016/assignment2/">[Assignment #2]</a></td>
+  </tr>
+  <tr>
+    <td>Lecture 8</td>
+    <td>July 26</td>
+    <td>
+      ConvNets for spatial localization<br>
+      Object detection</td>
+    
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture8.pdf">[slides]</a> [video]
+      <!-- <a href="https://youtu.be/GxZrEKZfW2o"><b>[video]</b></a> -->
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 9</td>
+    <td>July 26</td>
+    <td>
+      Understanding and visualizing Convolutional Neural Networks<br> 
+      Backprop into image: Visualizations, deep dream, artistic style transfer<br>
+      Adversarial fooling examples<br>
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture9.pdf">[slides]</a> [video]
+      <!-- <a href="https://youtu.be/ta5fdaqDT3M"><b>[video]</b></a> -->
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A2-part3 Due</td>
+    <td>July 26</td>
+    <td>Assignment #2 (Q4) Due date</td>
+    <td><a href="http://cs231n.github.io/assignments2016/assignment2/">[Assignment #2]</a></td>
+  </tr>
+  <tr>  
+    <td>Lecture 10</td>
+    <td>Aug 2</td>
+    <td>
+      Recurrent Neural Networks (RNN), Long Short Term Memory (LSTM)<br>
+      RNN language models<br>
+      Image captioning
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture10.pdf">[slides]</a> [video]
+      <!-- <a href="https://youtu.be/yCC09vCHzF8"><b>[video]</b></a> -->
+      <br>
+      <a href="http://www.deeplearningbook.org/contents/rnn.html">DL book RNN chapter</a> (optional)<br>
+      <a href="https://gist.github.com/karpathy/d4dee566867f8291f086">min-char-rnn</a>, <a href="https://github.com/karpathy/char-rnn">char-rnn</a>, <a href="https://github.com/karpathy/neuraltalk2">neuraltalk2</a>
+
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A3-part1 Due</td>
+    <td>Aug 2</td>
+    <td>Assignment #3 (Q1) Due date</td>
+    <td><a href="http://cs231n.github.io/assignments2016/assignment3/">[Assignment #3]</a></td>
+  </tr>
+  <tr>
+    <td>Lecture 11</td>
+    <td>Aug 9</td>
+    <td>
+      Training ConvNets in practice<br>
+      Data augmentation, transfer learning<br> 
+      Distributed training, CPU/GPU bottlenecks<br>
+      Efficient convolutions<br>
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture11.pdf">[slides]</a> [video]
+      <!-- <a href="https://youtu.be/pA4BsUK3oP4"><b>[video]</b></a> -->
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A3-part2 Due</td>
+    <td>Aug 9</td>
+    <td>Assignment #3 (Q2) Due date</td>
+    <td><a href="http://cs231n.github.io/assignments2016/assignment3/">[Assignment #3]</a></td>
+  </tr>
+  <tr>
+    <td>Lecture 12</td>
+    <td>Aug 16</td>
+    <td>
+      Overview of Caffe/Torch/Theano/TensorFlow
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture12.pdf">[slides]</a> [video]
+      <!-- <a href="https://youtu.be/Vf_-OkqbwPo"><b>[video]</b></a> -->
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A3-part3 Due</td>
+    <td>Aug 16</td>
+    <td>Assignment #3 (Q3) Due date</td>
+    <td><a href="http://cs231n.github.io/assignments2016/assignment3/">[Assignment #3]</a></td>
+  </tr>
+  <tr>
+    <td>Lecture 13</td>
+    <td>Aug 23</td>
+    <td>
+      Segmentation<br>
+      Soft attention models<br>
+      Spatial transformer networks<br>
+    </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture13.pdf">[slides]</a> [video]
+      <!-- <a href="https://www.youtube.com/watch?v=ByjaPdWXKJ4"><b>[video]</b></a> -->
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture 14</td>
+    <td>Aug 23</td>
+    <td>
+      ConvNets for videos<br>
+      Unsupervised learning<br>
+   </td>
+    <td>
+      <a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture14.pdf">[slides]</a> [video]
+      <!-- <a href="https://www.youtube.com/watch?v=ekyBklxwQMU"><b>[video]</b></a> -->
+    </td>
+  </tr>
+  <tr class="warning">
+    <td>A3-part4 Due</td>
+    <td>Aug 23</td>
+    <td>Assignment #3 (Q4) Due date</td>
+    <td><a href="http://cs231n.github.io/assignments2016/assignment3/">[Assignment #3]</a></td>
+  </tr>
+  <tr>
+    <td>Lecture 15</td>
+    <td>Aug 30</td>
+    <td>
+      Invited Talk: <a href="http://en.wikipedia.org/wiki/Jeff_Dean_(computer_scientist)">Jeff Dean</a> [video]
+    </td><td>
+      <!-- <a href="https://www.youtube.com/watch?v=T7YkPWpwFD4"><b>[video]</b></a> -->
+      Optional
+    </td>
+  </tr>
+  <tr class="danger">
+    <td>Proposal</td>
+    <td>Aug 30</td>
+    <td>이후 본인 과제에 어떻게 적용할지를 1 paragraph로 정리해서 PDF로 제출</td>
+    <td><a href="">[제출]</a></td>
+  </tr>
+  
+</tbody></table>
+</div>
+
+<!-- jQuery and Boostrap -->
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap.min.js"></script>
+
+
+
+</body></html>
